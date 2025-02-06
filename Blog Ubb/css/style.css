@@ -1,0 +1,280 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+
+/*--------------------------------Nav-----------------------------------------*/
+
+#menu {
+    background-color: #67081D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 25px 50px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu ul li a:hover {
+    transition: 0.3s;
+    color: #bd7575;
+}
+
+#menu .bouton-connexion {
+    color: #67081D;
+    background-color: white;
+    border-radius: 40px;
+    padding: 8px 25px;
+}
+
+#menu .bouton-connexion:hover {
+    transition: 0.3s;
+    background-color: #bd7575;
+    color: #67081D;
+}
+
+.link {
+    color: #67081D;
+}
+
+.link:hover {
+    transition: 0.3s;
+    color: #bd7575;
+}
+
+/*MISE EN FORME DU FORMULAIRE DE CONTACT*/
+form {
+    text-align: center;
+
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.champ input {
+    width: 35%;
+    border: none;
+
+    border-bottom: 2px solid #ccc; /* Ajoute uniquement une ligne en bas */
+    outline: none; /* Supprime le contour bleu par défaut */
+}
+
+/* Effet au focus (quand l'utilisateur clique sur le champ) */
+input:focus {
+    transition: border-color 0.3s ease;
+    border-bottom: 2px solid #67081D; /* Change la couleur de la ligne */
+}
+
+.btn-se-connecter button {
+    color: white;
+    background-color: #67081D;
+    border: none;
+    border-radius: 40px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.btn-se-connecter button:hover {
+    transition: 0.3s;
+    background: #bd7575;
+}
+
+/*------------------------------------Fin Nav-----------------------------------------*/
+
+.image-fixe {
+    position: fixed; /* Rend l'image fixe sur l'écran */
+    top: 0px;
+    left: 0;
+    width: 100%; /* L'image prend toute la largeur */
+    height: 100vh; /* L'image prend toute la hauteur de l'écran */
+    z-index: -1; /* Place l'image derrière le contenu */
+    overflow: hidden;
+}
+
+.image-fixe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse l'espace sans la déformer */
+    filter: brightness(80%); /* Réduit la luminosité à 80% */
+}
+
+.article1titre{
+    padding-left: 10px;
+    margin-left: 20px;
+    padding-top: 200px;
+    margin-right: 200px;
+    font-size: 6rem;
+    color: white;
+}
+
+/*------------------ligne sous le titre-------------------------*/
+
+h1 {
+    position: relative;
+    font-size: 3rem;
+}
+
+h1::after {
+    content: ""; /* Ajoute une ligne vide */
+    display: block;
+    width: 30%; /* Largeur de la ligne */
+    height: 4px; /* Épaisseur de la ligne */
+    background-color: white; /* Couleur blanche */
+    margin-left: 10px; /* Espacement autour de la ligne */
+}
+
+
+/*-------------- fin ligne sous le titre -------------------------*/
+
+.soustitre{ 
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+.carre{
+    background-color: #67081D;
+    color: white;
+    margin: 0; /* Supprime les marges extérieures entre les div */
+    padding: 50px; /* Optionnel : Supprime les marges intérieures si nécessaire */
+    text-align: center; /* Aligne le texte au centre */
+    font-size: 2rem;
+}
+
+/* Article */
+.phraseaccroche {
+    padding: 0px;
+    color: #67081D;
+}
+
+.contenu{
+    background-color: white; /* Fond blanc */
+    padding: 50px; /* Ajoute de l'espace interne */
+}
+
+/*-------------------Display grid 65/ 35--------------*/
+.container {
+    display: grid; 
+    grid-template-columns: 65% 35%; /* Définit deux colonnes : 65% et 35% */
+    width: 100%; /* Prend toute la largeur de la page */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre (exemple) */
+}
+
+.section-left {
+    background-color: white; /* Couleur de fond pour visualiser */
+    padding: 20px;
+}
+
+.section-right {
+    background-color: #f4f4f4; /* Couleur de fond pour visualiser */
+    padding: 20px;
+}
+
+/*----------------------fin display grid /   Début contenu ---------------------*/
+
+.paragraphe2{
+    margin-top: 50px;
+}
+
+.image2{
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.petit{
+    color: grey;
+    margin-bottom: 50px;
+}
+
+.text-with-line {
+    border-left: 5px solid #67081D; /* Crée une ligne verticale à gauche */
+    border-radius: 3px;
+    padding-left: 15px; /* Espace entre la ligne et le texte */
+    font-size: 20px; /* Taille du texte */
+    margin-bottom: 25px;
+    color: #67081D;
+}
+
+.paragraphe3{
+    margin-bottom: 50px;
+}
+
+.minititre{
+    color: #67081D;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/*------------------Fin Contenu / Début contenu gauche------------------*/
+
+.imagedroite1{
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.titredroite{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.txtdroite{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.clickable-text {
+    text-decoration: none; /* Retire le soulignement par défaut */
+    color: black; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    margin-left: 20px;
+}
+
+.clickable-text:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+    color: #191919; /* Change la couleur du texte au survol (optionnel) */
+}
+
+.imagedroite2{
+    height: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.imagedroite3{
+    height: 370px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+
