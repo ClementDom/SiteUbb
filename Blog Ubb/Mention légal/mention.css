@@ -1,0 +1,117 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+
+/*--------------------------------Nav-----------------------------------------*/
+
+#menu {
+    background-color: #67081D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 25px 50px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu ul li a:hover {
+    transition: 0.3s;
+    color: #bd7575;
+}
+
+#menu .bouton-connexion {
+    color: #67081D;
+    background-color: white;
+    border-radius: 40px;
+    padding: 8px 25px;
+}
+
+#menu .bouton-connexion:hover {
+    transition: 0.3s;
+    background-color: #bd7575;
+    color: #67081D;
+}
+
+.link {
+    color: #67081D;
+}
+
+.link:hover {
+    transition: 0.3s;
+    color: #bd7575;
+}
+
+/*MISE EN FORME DU FORMULAIRE DE CONTACT*/
+form {
+    text-align: center;
+
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.champ input {
+    width: 35%;
+    border: none;
+
+    border-bottom: 2px solid #ccc; /* Ajoute uniquement une ligne en bas */
+    outline: none; /* Supprime le contour bleu par défaut */
+}
+
+/* Effet au focus (quand l'utilisateur clique sur le champ) */
+input:focus {
+    transition: border-color 0.3s ease;
+    border-bottom: 2px solid #67081D; /* Change la couleur de la ligne */
+}
+
+.btn-se-connecter button {
+    color: white;
+    background-color: #67081D;
+    border: none;
+    border-radius: 40px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.btn-se-connecter button:hover {
+    transition: 0.3s;
+    background: #bd7575;
+}
+
+/*------------------------------------Fin Nav-----------------------------------------*/
+
+.titre{
+    padding-left: 200px;
+}
+
+.pave{
+    font-size: 1rem;
+    padding-left: 200px;
+    padding-right: 200px;
+}
